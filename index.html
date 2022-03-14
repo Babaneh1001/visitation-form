@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Visitor's Login Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="#" method="GET">
+        <div class="logo">
+            <img src="./img/globus-bank-logo.svg" alt="globus-bank">
+        </div>
+        <div class="header">
+            <div>
+                <label for="date"> Date </label>
+                <input type="date" placeholder="Date" id="date">
+            </div>
+    
+            <div class="title">
+                <h1 class="form-name"> Visitor's Form </h1>  
+            </div>
+        </div>
+        <h2 class="instruction"> Please complete the form </h2>
+
+        <div class="form-control">
+            <label for="v-name"> Visitor's Name </label>
+            <input type="text" id="v-name">
+        </div>
+
+        <div class="form-control">
+            <label for="v-address"> Visitor's Address </label>
+            <input type="text" id="v-address">
+        </div>
+
+        <div class="form-control">
+            <label for="v-number"> Visitor's Number </label>
+            <input type="tel" id="v-number">
+        </div>
+
+        <div class="form-control">
+            <label for="who-see"> Whom to see </label>
+            <input type="text" id="who-see">
+        </div>
+
+        <div class="form-control">
+            <label for="purpose"> Purpose of Visit </label>
+            <input type="text" id="purpose">
+        </div>
+
+        <!-- add a flex column to this section -->
+        <div class="row-control">
+
+           <div class="left">
+            <div class="form-control">
+                <label for="time-in"> Time in </label>
+                <input type="text" id="time-in">
+            </div>
+
+            <div class="form-control">
+                <label for="time-out"> Time out </label>
+                <input type="text" id="time-out">
+            </div>
+           </div>
+<!-- 
+            <div class="right">
+                <div class="form-control">
+                    <label for="sign-in"> Sign in: </label>
+                    <input type="text" id="sign-in">
+                </div>
+    
+                <div class="form-control">
+                    <label for="sign-out"> Sign out: </label>
+                    <input type="text" id="sign-out">
+                </div>
+            </div> -->
+        </div> 
+
+    </form>
+    <div class="box">
+        <div class="box-sm red"></div>
+        <div class="box-sm blue"></div>
+    </div>
+</body>
+</html>

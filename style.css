@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "campton-book";
+    src: url(./Campton/TTF/Campton-Book.ttf);
+}
+
+@font-face {
+    font-family: "campton-black";
+    src: url(./Campton/TTF/Campton-Black.ttf);
+}
+
+@font-face {
+    font-family: "campton-medium";
+    src: url(./Campton/TTF/Campton-Medium.ttf);
+}
+
+@font-face {
+    font-family: "campton-semibold";
+    src: url(./Campton/TTF/Campton-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "campton-bold";
+    src: url(.//Campton/TTF/Campton-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "campton-medium";
+    /* width: 100%; */
+    margin-top: 20px;
+}
+
+form {
+    margin-inline: 100px;
+}
+
+h1 {
+    font-family: "campton-bold";
+    font-size: 36px;
+    color: #002D62;
+}
+
+h2 {
+    font-size: 18px;
+    margin-block: 5px 30px;
+}
+
+input {
+    font-size: 20px;
+    color: rgb(59, 59, 59);
+    padding-left: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: end;
+    margin-block: 0 20px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.form-control input{
+    width: 100%;
+    height: 40px;
+    margin-block: 20px;
+    border: 0.5px solid grey ;
+}
+
+.form-control input:focus-within {
+    border-right: 10px solid #003366;
+}
+
+.form-control label{
+    color: #002D62;
+}
+
+.row-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    /* max-width: 600px; */
+    height: 0px;
+    margin: 50px 0px 30px 0px;
+}
+
+.box-sm {
+    height: 6px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.red {
+    background-color: #C60C30;
+    width: 20%;
+}
+
+.blue {
+    background-color: #002D62;
+    width: 70%;
+}
+
+@media screen and (min-width: 300px) and  (max-width: 560px) {
+    h1 {
+        margin-inline: 40px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .header {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
